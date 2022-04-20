@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+}
+
+
+
+.rain{
+    width: 100vw;
+    height: 50vw;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: black;
+}
+
+.rain::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    left: 25%;
+    top: 50%;
+    box-shadow: 0 0 0 2vw purple,0 0 0 4vw blue,0 0 0 6vw green,0 0 0 8vw yellow,0 0 0 10vw orangered,0 0 0 12vw red;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
